@@ -3,6 +3,9 @@
   #     desired widget in your `content/home/` folder.
   #   The weight parameter defines the order that the links will appear in.
 
+
+# 右上角标签列表
+# https://gohugo.io/content-management/menus/
 main:
   - name: Home
     url: /
@@ -10,3 +13,6 @@ main:
   - name: Resumé
     url: about/
     weight: 20
+  # - name: Docs
+  #   url: docs/
+  #   weight: 20

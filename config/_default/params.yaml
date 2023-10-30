@@ -1,14 +1,13 @@
 # SITE SETUP
 # Guide: https://wowchemy.com/docs/getting-started/
 # Documentation: https://wowchemy.com/docs/
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
 
-appearance:
+appearance: # https://university.wowchemy.com/getting-started/customize
   theme_day: custom
   theme_night: custom
-  font: minimal
+  font: minimal 
   font_size: L
 
 # SEO
@@ -41,14 +40,14 @@ header:
     show_search: true
     highlight_active_link: false
 
-footer:
-  copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
-    license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+# footer:
+#   copyright:
+#     notice: '© {year} Me. This work is licensed under {license}'
+#     license:
+#       enable: true
+#       allow_derivatives: false
+#       share_alike: true
+#       allow_commercial: false
 
 # Localization
 
@@ -61,17 +60,19 @@ locale:
 features:
   syntax_highlighter:
     enable: true
+    theme_light: github-light
+    theme_dark: github-dark
     extra_languages:
       - r
       - latex
   math:
+    enable: true
+  privacy_pack: # 隐私 cookie 政策
     enable: false
-  privacy_pack:
-    enable: false
-  repository:
-    url: 'https://github.com/<username>/<repository>'
-    content_dir: content
-    branch: main
+  # repository: # 允许访客更改源码
+  #   url: 'https://github.com/<username>/<repository>'
+  #   content_dir: content
+  #   branch: main
   avatar:
     gravatar: false
     shape: circle
@@ -87,13 +88,16 @@ features:
       repo_id: ''
       category: ''
       category_id: ''
-  search:
-    provider: ''
-    algolia:
-      app_id: ''
-      api_key: ''
-      index_name: ''
-      show_logo: false
+  search: # https://university.wowchemy.com/reference/search/
+    provider: wowchemy
+    wowchemy:
+      min_length: 1
+      threhold: 0.3
+    # algolia:
+    #   app_id: ''
+    #   api_key: ''
+    #   index_name: ''
+    #   show_logo: false
   map:
     provider: ''
     api_key: ''
