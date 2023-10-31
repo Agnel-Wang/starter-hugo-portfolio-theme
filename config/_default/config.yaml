@@ -18,9 +18,9 @@ cascade:
     editable: false
     reading_time: true
     commentable: true
-    show_related: true
+    # show_related: true # 按标签显示相关文章
     show_breadcrumb: true
-    share: true
+    # share: true
     header:
       navbar:
         enable: false
