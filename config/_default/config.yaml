@@ -24,6 +24,11 @@ cascade:
     header:
       navbar:
         enable: false
+  # Docs folder options
+  - _target:
+      path: /docs/**
+    editable: true
+    show_breadcrumb: true
 
 ############################
 ## LANGUAGE

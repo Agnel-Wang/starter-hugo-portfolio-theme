@@ -16,3 +16,6 @@ main:
   - name: Blog
     url: post/
     weight: 30
+  - name: Docs
+    url: docs/
+    weight: 40
