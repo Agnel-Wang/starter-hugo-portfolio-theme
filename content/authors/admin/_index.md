@@ -15,21 +15,21 @@ status:
 # Organizations/Affiliations
 organizations:
 - name: Unitree
-  url: "unitree.com"
+  url: "https://unitree.com"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
-interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+# interests:
+# - Artificial Intelligence
+# - Computational Linguistics
+# - Information Retrieval
 
 education:
  courses:
  - course: B.E. in Mechanical engineering
    institution: Wuhan University
-   year: 2018
+   year: 2018-2022
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
