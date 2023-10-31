@@ -14,11 +14,16 @@ cascade:
   # Blog post options
   - _target:
       path: /post/**
-    editable: true
+    pager: true
+    editable: false
     reading_time: true
     commentable: true
     show_related: true
     show_breadcrumb: true
+    share: true
+    header:
+      navbar:
+        enable: false
 
 ############################
 ## LANGUAGE
