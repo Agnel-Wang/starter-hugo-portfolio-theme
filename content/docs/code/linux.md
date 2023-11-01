@@ -28,7 +28,6 @@ https://rufus.ie/
 
 2. 安装
 
-
 ```sh
 # 小鱼一键安装
 wget http://fishros.com/install -O fishros && . fishros
@@ -60,6 +59,49 @@ WantedBy=default.target
 sudo systemctl enable test.service
 ```
 
+### Network
+
+communicate with arm by ethernet
+
+1. temporary settings
+```
+sudo ifconfig NAME down
+sudo ifconfig NAME IP/24  or sudo ifconfig NAME up IP down 255.255.255.0
+```
+
+    24 means netmask 255.255.255.0
+
+2. permanent settings
+```
+sudo vim /etc/network/interfaces
+```
+
+    add text beneath into file
+```
+auto NAME
+iface NAME inet static
+address IP
+netmask 255.255.255.0
+```
+    and then
+```
+sudo /etc/init.d/networking restart
+```
+
+3. network manager
+
+查看网络连接列表
+```sheel
+nmcli connection show 
+```
+
+创建一个以太网连接
+```shell
+nmcli connection add type ethernet con-name <connection_name> ifname <interface_name>
+```
+（<connection_name> 是连接名称，任意命名； <interface_name> 是网络接口名称，如eth0）
+
+
 ### Serial
 
 ubuntu打开串口需要sudo权限
@@ -69,3 +111,21 @@ ubuntu打开串口需要sudo权限
 ```bash
 sudo chown $USER:$USER /dev/ttyUSB0
 ```
+
+可用软件：
++ cutecom
++ minicom
+
+### Swap space
+
+```bash
+free -t 查询内存
+sudo dd if=/dev/zero of=sfile bs=1024 count=1000000
+sudo mkswap sfile
+sudo swapon sfile
+sudo swapoff sfile
+```
+
+### Software
+
++ kazam 录屏
