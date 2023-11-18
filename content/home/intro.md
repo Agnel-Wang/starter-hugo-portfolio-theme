@@ -9,14 +9,23 @@ headless: true
 weight: 10
 
 author: admin
-design:
- background:
-   color: '#090a0b'
-   text_color_light: true
-   video:
-    # path:  # enter filename of a video in /assets/media
-    path:  /assets/media/icon.png
- css_class: fullscreen
+# design:
+#  background:
+#    color: '#090a0b'
+#    text_color_light: true
+#    video:
+#     # path:  # enter filename of a video in /assets/media
+#     path:  /assets/media/1.jpg
+#  css_class: fullscreen
+
+
+
+# title: "Ananke: a Hugo Theme"
+
+# description: "The last theme you'll ever need. Maybe."
+cascade:
+  featured_image: '/assets/media/1.jpg'
+
 ---
 
 👋 Hi, there! I'm **Agnel**, a manipulator robotics researcher at Unitree.
