@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Agnel Wang (王锟)
+title: Alice Wu (吳恩達)
 
 # Is this the primary user of the site?
 superuser: true
